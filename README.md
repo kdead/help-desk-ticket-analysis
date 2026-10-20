@@ -107,6 +107,6 @@ year-by-year tie-out above. The log is written in test-case format
 - `README.md` — this file
 - `validation-log.md` — the full source-to-target QA log
 - `report-page.png` — screenshot of the report page
-- `help-desk-report.pdf` — PDF export of the report
+- `HelpDeskTicketAnalysis.pdf` — PDF export of the report
 - The `.pbix` is a local Power BI Desktop file (no Power BI Service
   tenant was used for this project)
