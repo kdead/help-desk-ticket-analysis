@@ -48,6 +48,34 @@ PostgreSQL-extracted ticket data, Jan 2007 – Mar 2023
 - Resolution dates effectively cover Aug 2015 – Mar 2023 (plus one stray
   2013 row); ticket creation spans the full Apr 2007 – Mar 2023 range.
 
+## What this means
+
+Two explanations fit the pattern in this data. The first is that the
+longest delays are a workflow problem before they are a people
+problem. Nearly half of all tickets (46.5 percent) have no assignee
+recorded, and resolved tickets with no assignee waited a median of
+1,654 days, far longer than any named agent. Work that is never
+clearly owned can sit untouched regardless of how fast the team works
+on the tickets it does pick up. The second is that missing intake
+data limits every decision built on top of it. Priority is unknown on
+50.9 percent of tickets, so workload and urgency reporting describes
+only about half of the actual work, and the extreme gap between the
+35-day median and the 770-day mean shows that a small number of very
+old tickets, not everyday performance, drives the averages leaders
+are most likely to quote.
+
+Two follow-up actions follow from that. First, make assignment a
+required step at intake, with an owner recorded before a ticket can
+age, and review the unassigned backlog as its own queue so old,
+ownerless tickets stop inflating resolution times. Second, make
+priority a required field when a ticket is created, and report
+resolution time using the median alongside the mean, so a long tail
+of old tickets cannot present itself as typical performance. Both
+changes are measurable with the measures already in this report: the
+unassigned share, the unknown-priority share, and the median
+resolution time can be rechecked in the next data pull to see whether
+they move.
+
 ## Model
 - Fact: `issues` (66,691 rows)
 - Dimensions: DimStatus, DimType, DimPriority, DimProject, DimAssignee,
